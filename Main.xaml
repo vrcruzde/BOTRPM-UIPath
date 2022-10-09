@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1664" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="34">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BOTTRM" sap:VirtualizedContainerService.HintSize="475.2,1599.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe" sap:VirtualizedContainerService.HintSize="433.6,1506.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1289.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="vstrDolarPeso" />
+              <Variable x:TypeArguments="x:String" Name="vstrEuroPeso" />
+              <Variable x:TypeArguments="x:String" Name="vstrCanPesos" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Dolares a pesos" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=USD&amp;To=COP" DesignTimeRectangle="299, 627, 1320, 64" ElementType="Text" FriendlyName="'4615,1405 Colombian'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='result__BigRate-sc-1bsijpp-1 iGrAod' tag='P' aaname='4615,14 Colombian Pesos' /&gt;" Guid="7103f562-c7ad-4e9f-b717-95ab077717d6" InformativeScreenshot="1ff6e146e5040823e1dc437bbc1d2fb2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJmOTJjNTE5Yy0wZDY3LTQ2NjktOTk0NS1hMzExYTcwZTNjYzQifQ==/*yieldify*/' title='Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vstrDolarPeso]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;El valor de dolar es: &quot;+vstrDolarPeso]" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=EUR&amp;To=COP" Version="V1" />
+            <uix:NGetText DisplayName="Euros a Pesos" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=EUR&amp;To=COP" DesignTimeRectangle="299, 815, 1320, 64" ElementType="Text" FriendlyName="'4495,3986 Colombian'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='result__BigRate-sc-1bsijpp-1 iGrAod' tag='P' aaname='4495,39 Colombian Pesos' /&gt;" Guid="7751f2fd-05d0-4feb-be32-2b882ebd0b49" InformativeScreenshot="f84e51de7fb5acfddedc095b763779e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJmOTJjNTE5Yy0wZDY3LTQ2NjktOTk0NS1hMzExYTcwZTNjYzQifQ==/*yieldify*/' title='Euros a Colombian Pesos | Convierta 1 EUR a COP | Xe' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vstrEuroPeso]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;El valor del euro es: &quot;+vstrEuroPeso]" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=CAD&amp;To=COP" Version="V1" />
+            <uix:NGetText DisplayName="Canadienses a pesos" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=CAD&amp;To=COP" DesignTimeRectangle="299, 815, 1320, 64" ElementType="Text" FriendlyName="'3355,5274 Colombian'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='result__BigRate-sc-1bsijpp-1 iGrAod' tag='P' aaname='3355,52 Colombian Pesos' /&gt;" Guid="31493a49-dde8-4200-a680-112d349ef839" InformativeScreenshot="7837e1c899a5ce4cca1de054e22baa8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJmOTJjNTE5Yy0wZDY3LTQ2NjktOTk0NS1hMzExYTcwZTNjYzQifQ==/*yieldify*/' title='Dólares canadienses a Colombian Pesos | Convierta 1 CAD a COP | Xe' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[vstrCanPesos]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;El valor del Canadience es:&quot;+vstrCanPesos]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bbfd03366ed7db485ec0353d7b819e90.png" Selector="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJmOTJjNTE5Yy0wZDY3LTQ2NjktOTk0NS1hMzExYTcwZTNjYzQifQ==/*yieldify*/' title='Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe' /&gt;" Url="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=USD&amp;To=COP" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
