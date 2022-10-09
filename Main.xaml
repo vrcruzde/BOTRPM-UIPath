@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1726.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2128" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="34">
+    <scg:List x:TypeArguments="x:String" Capacity="68">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -35,10 +35,14 @@
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -72,26 +76,28 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-    </scg:List>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="BOTTRM" sap:VirtualizedContainerService.HintSize="475.2,1661.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="BOTTRM" sap:VirtualizedContainerService.HintSize="475.2,732" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="vstrDolarPeso" />
+      <Variable x:TypeArguments="x:String" Name="vstrEuroPeso" />
+      <Variable x:TypeArguments="x:String" Name="vstrCanPesos" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe" sap:VirtualizedContainerService.HintSize="433.6,1568.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1352" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="vstrDolarPeso" />
-              <Variable x:TypeArguments="x:String" Name="vstrEuroPeso" />
-              <Variable x:TypeArguments="x:String" Name="vstrCanPesos" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1352.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -106,7 +112,7 @@
               </uix:NGetText.Text>
             </uix:NGetText>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;El valor de dolar es: &quot;+vstrDolarPeso]" />
-            <Delay Duration="1.00:00:00" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="333.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=EUR&amp;To=COP" Version="V1" />
             <uix:NGetText DisplayName="Euros a Pesos" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5ae5634d-f648-4f70-9fbc-c6996b701139" Version="V1">
               <uix:NGetText.Target>
@@ -133,6 +139,31 @@
       <uix:NApplicationCard.TargetApp>
         <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bbfd03366ed7db485ec0353d7b819e90.png" Selector="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJmOTJjNTE5Yy0wZDY3LTQ2NjktOTk0NS1hMzExYTcwZTNjYzQifQ==/*yieldify*/' title='Dólares estadounidenses a Colombian Pesos | Convierta 1 USD a COP | Xe' /&gt;" Url="https://www.xe.com/es/currencyconverter/convert/?Amount=1&amp;From=USD&amp;To=COP" />
       </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Resultados en excel" sap:VirtualizedContainerService.HintSize="433.6,546.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Resultado.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,436.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteCell Cell="B1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1" Text="[vstrDolarPeso]" />
+            <ui:ExcelWriteCell Cell="B2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1" Text="[vstrEuroPeso]" />
+            <ui:ExcelWriteCell Cell="B3" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1" Text="[vstrCanPesos]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
   </Sequence>
 </Activity>
